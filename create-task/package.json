@@ -1,5 +1,5 @@
 {
-  "name": "vite-project",
+  "name": "create-task",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,8 +10,5 @@
   },
   "devDependencies": {
     "vite": "^4.1.0"
-  },
-  "dependencies": {
-    "incorrectquotesapi": "^2.1.1"
   }
 }
