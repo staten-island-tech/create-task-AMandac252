@@ -10,17 +10,14 @@ async function fetchcat() {
     } else {
       const cat = await response.json();
       nekos.push(cat);
-      console.log(cat);
     }
   }
   showcats(nekos);
 }
 
 function showcats(nekos) {
-  console.log("work");
-  /* document.getElementByclass("catdisplay").innerHTML = "";
   cat.forEach((neko) => {
-    document.getElementById("display").insertAdjacentHTML(
+    document.getElementById("catdisplay").insertAdjacentHTML(
       "beforeend",
 
       `<div data-aos="fade-up" class="display-card2">
@@ -29,7 +26,7 @@ function showcats(nekos) {
   <h4 class="display-name">${neko.CatName}</h4>
   <h5 class="display-type"> Cat type: ${neko.CatType}</h5>`
     );
-  }); */
+  });
 }
 fetchcat();
 
