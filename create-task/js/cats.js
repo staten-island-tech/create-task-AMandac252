@@ -1,6 +1,6 @@
 async function fetchcat() {
   let cats = [];
-  for (let i = 1; i < 67; i++) {
+  for (let i = 1; i < 2; i++) {
     let url = `https://api.neko-atsume.emshea.com/cats/${i}`;
     const response = await fetch(url);
 
@@ -16,16 +16,17 @@ async function fetchcat() {
 }
 
 function showcats(cats) {
-  document.getElementById("display").innerHTML = "";
+  // document.getElementById("display").innerHTML = "";
   cats.forEach((cat) => {
-    document.getElementsById("display").insertAdjacentHTML(
+    document.getElementById("display").insertAdjacentHTML(
       "beforeend",
 
       `<div data-aos="fade-up" class="display-card2">
-  <p> cat id number ${cat.CatID}</p>
-  <img class="display-sprite" src="${cat.CatImage}" />
-  <h4 class="display-name">${cat.CatName}</h4>
-  <h5 class="display-type"> Cat type: ${cat.CatType}</h5>`
+  <h4> ID: ${cat.CatId}</h4>
+  <div class="bg"> <img class="display-sprite" src="${cat.CatImage}" /></div>
+  <h5 class="display-name">${cat.CatName}</h5>
+  <h6>${cat.CatDescription}, Memento: ${cat.Memento}</h6>
+  <h7 class="display-type"> Cat type: ${cat.CatType}</h7>`
     );
   });
 }
