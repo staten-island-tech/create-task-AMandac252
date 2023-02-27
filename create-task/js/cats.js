@@ -1,7 +1,6 @@
 async function fetchcat() {
   let cats = [];
   let x = Math.floor(Math.random() * 67);
-  console.log(x);
   let url = `https://api.neko-atsume.emshea.com/cats/${x}`;
   const response = await fetch(url);
 
@@ -27,9 +26,11 @@ function showcats(cats) {
   <h4> ID: ${cat.CatId}</h4>
   <div class="bg"> <img class="display-sprite" src="${cat.CatImage}" /></div>
   <h5 class="display-name">${cat.CatName}</h5>
-  <h5>${cat.CatDescription}</h5>
+  <h5>Description: ${cat.CatDescription}</h5>
   <h5>Memento: ${cat.Memento}</h5>
-  <h5 class="display-type"> Cat type: ${cat.CatType}</h5></div>`
+  <h5 class="display-type"> Cat type: ${cat.CatType}</h5></div>
+  <h5 class="display-type"> Power Level: ${cat.CatPowerLevel}</h5></div>
+  `
     );
   });
 }

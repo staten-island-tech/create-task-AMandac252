@@ -7,13 +7,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Neko Atsume Cat Generator</title>
   <link rel="stylesheet" href="style/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <div id="holding-container">
-    <div class="window">
+    <div class="window" id="window">
       <div class="header">
         <h1 class="title" data-aos="fade-up">Neko Atsume Cat Generator</h1>
+
+        <button class="gen-btn">Cats</button>
+        <button class="history-btn">History</button>
       </div>
       <div class="display-card" data-aos="fade-up">
         <h4>
@@ -23,15 +29,15 @@
           This generator will generate all 66 collectable cats and the results can be viewed in the history tab.
         </h4>
       </div>
-      <button class="cat-btn">Generate</button>
+      <button class="cat-btn">Generate Cat</button>
     </div>
     <section class="display" id="display">
-      <div class="display-cat" id="display-cat"> <!--  <div class="display-card">
-          <img class="display-img" src="images/icebreaker.png" />
-          <h2 class="display-artist">Beatles</h2>
-          <h3 class="display-album">Abbey Road</h3>
-          <button class="remove btn">Remove Album</button>
-          </div> -->
+      <div class="display-cat" id="display-cat">
+        <!-- main cat card display case -->
+      </div>
+      <!-- Create a border line seperation maybe-->
+      <div class="display-history" id="display-history">
+        <!-- Main Cat history Display -->
       </div>
     </section>
 
