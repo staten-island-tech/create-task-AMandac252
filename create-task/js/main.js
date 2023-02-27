@@ -6,7 +6,11 @@ import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
 AOS.init();
 
-function mainpage() {
+const DOMSelectors = {
+  create: document.querySelector(".cat-btn"),
+  display: document.getElementById(".display"),
+};
+
+DOMSelectors.create.addEventListener("click", function () {
   fetchcat();
-}
-mainpage();
+});
