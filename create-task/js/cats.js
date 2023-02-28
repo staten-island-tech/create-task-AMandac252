@@ -10,13 +10,12 @@ async function fetchcat() {
   } else {
     const cat = await response.json();
     cats.push(cat);
+    console.log(cat);
   }
   showcats(cats);
 }
 
 function showcats(cats) {
-  document.getElementById("display").innerHTML = "";
-
   cats.forEach((cat) => {
     document.getElementById("display").insertAdjacentHTML(
       "beforeend",

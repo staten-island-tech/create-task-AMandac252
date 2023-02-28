@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Neko Atsume Cat Generator</title>
+  <title>Neko Atsume Generator</title>
   <link rel="stylesheet" href="style/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,20 +16,24 @@
   <div id="holding-container">
     <div class="window" id="window">
       <div class="header">
-        <h1 class="title" data-aos="fade-up">Neko Atsume Cat Generator</h1>
+        <h1 class="title" data-aos="fade-up">Neko Atsume Generator</h1>
 
-        <button class="gen-btn">Cats</button>
-        <button class="history-btn">History</button>
       </div>
-      <div class="display-card" data-aos="fade-up">
-        <h4>
-          Neko Atsume: Kitty Collector (Japanese: ねこあつめ, "Cat Collection") is a mobile cat-collecting game developed by
-          Hit-Point Co., Ltd. for iOS and Android, released on October 20, 2014.
+      <div id="info">
+        <div id="main-info" class="display-card" data-aos="fade-up">
+          <h4>
+            Neko Atsume: Kitty Collector (Japanese: ねこあつめ, "Cat Collection") is a mobile cat-collecting game developed
+            by
+            Hit-Point Co., Ltd. for iOS and Android, released on October 20, 2014.
 
-          This generator will generate all 66 collectable cats and the results can be viewed in the history tab.
-        </h4>
+            This generator will generate all 66 collectable cats and you can generate goods as well.
+          </h4>
+        </div>
+        <button class="cat-btn">Generate Cat</button>
+        <button class="goods-btn">Generate goodies</button>
+
+        <button class="both-btn">Generate Both</button>
       </div>
-      <button class="cat-btn">Generate Cat</button>
     </div>
     <section class="display" id="display">
       <div class="display-cat" id="display-cat">
@@ -41,7 +45,7 @@
       </div>
     </section>
 
-  </div>
+  </div>`
   </div>
   <script type="module" src="js/main.js"></script>
 </body>
